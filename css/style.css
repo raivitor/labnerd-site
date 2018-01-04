@@ -230,8 +230,10 @@ color: #fff;
 	margin-bottom:40px;
 }
 .service-list-col1{
+	margin-right: 10px;
 	float:left;
 	width:60px;
+	text-align: center;
 }
 .service-list-col1 i{
 	font-style:normal;
@@ -242,7 +244,8 @@ color: #fff;
 	line-height:38px;
 }
 .service-list-col2{
-	overflow:hidden;	
+	overflow:hidden;
+	text-align: justify;	
 }
 .main-section.alabaster{
 	background:#fafafa;
