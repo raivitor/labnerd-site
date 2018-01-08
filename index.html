@@ -238,15 +238,15 @@
                 </div>
             </div>
         	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-
-                <div class="modal fade" tabindex="-1" role="dialog">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <h4 class="modal-title">Email enviado</h4>
+                                <h4 class="modal-title" id="myModalLabel">Email enviado</h4>
                             </div>
                             <div class="modal-body">
                                 <p>Email enviado com sucesso, obrigado pelo contato. Logo mais entraremos em contato.</p>
@@ -255,11 +255,8 @@
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Ok!</button>
                             </div>
                         </div>
-                        <!-- /.modal-content -->
                     </div>
-                    <!-- /.modal-dialog -->
                 </div>
-                <!-- /.modal -->
 
             	<div class="form">
                     <div id="sendmessage">Sua mensagem foi enviada, obrigado.</div>
@@ -313,7 +310,7 @@
             data: $("#form").serialize(),
             success: function (response) {
                 console.log(response)
-                if(response){
+                if(response == 1){
                     $('#myModal').on('shown.bs.modal', function () {
                         $('#myInput').focus()
                     });
