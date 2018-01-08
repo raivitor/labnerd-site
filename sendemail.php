@@ -7,7 +7,7 @@
   $emailremetente    = trim($_POST['email']);
   $emaildestinatario = $emailsender;
   $mensagem          = trim($_POST['message']); 
-  $mensagemHTML = '<p>Nome: '. $_POST['name'].'</p><p> Email: '.$emailremetente.'<p>Mensagem: <b><i>'.$mensagem.'</i></b></p><hr>'; 
+  $mensagemHTML = '<p>Nome: '. $_POST['name'].'</p><p> Email: '.$emailremetente.'<p>Mensagem: '.$mensagem.'</p><hr>'; 
   $headers = "MIME-Version: 1.1".$quebra_linha;
   $headers .= "Content-type: text/html; charset=utf-8".$quebra_linha;
   $headers .= "From: ".$emailremetente.$quebra_linha;
